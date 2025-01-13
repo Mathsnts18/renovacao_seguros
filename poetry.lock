@@ -1595,6 +1595,16 @@ pure-eval = "*"
 tests = ["cython", "littleutils", "pygments", "pytest", "typeguard"]
 
 [[package]]
+name = "stats"
+version = "0.1.2a"
+description = "Calculator-style statistical functions"
+optional = false
+python-versions = "*"
+files = [
+    {file = "stats-0.1.2a.tar.gz", hash = "sha256:854e59fa99f92ce8319c16149ef8e9939dba3e2237bbb0fb6a6094c60155bd4c"},
+]
+
+[[package]]
 name = "statsmodels"
 version = "0.14.4"
 description = "Statistical computations and models for Python"
@@ -1773,4 +1783,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11.4"
-content-hash = "051fcf90e963cd9ebf27cee89fceef6a526bba08cc098bbd2658f2fce76bac16"
+content-hash = "d0aeafcf1c609faa25f23bc64a52bd37fd03418379f7422b1302fa6c005aabd3"

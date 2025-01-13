@@ -1,3 +1,5 @@
 tests/*
 renovacao_seguros/*
+notebooks/modelos.ipynb
+notebooks/modelos_select_feats.ipynb
 .gitignore

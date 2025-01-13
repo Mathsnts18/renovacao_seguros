@@ -17,6 +17,7 @@ scikit-learn = "^1.6.0"
 openpyxl = "^3.1.5"
 statsmodels = "^0.14.4"
 imblearn = "^0.0"
+stats = "^0.1.2a0"
 
 
 [build-system]
