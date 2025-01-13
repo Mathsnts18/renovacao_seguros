@@ -25,9 +25,9 @@ Quando ocorre um evento coberto pela apólice, os segurados apresentam uma **rec
 
 ![alt text](.img/image-2.png)
 
-### [📘 Notebook - Análise exploratória de dados](notebooks\analise_exploratoria.ipynb)
+### [📘 Notebook - Análise exploratória de dados](https://github.com/Mathsnts18/renovacao_seguros/blob/main/notebooks/analise_exploratoria.ipynb)
 
-[💾 Relatório](notebooks/reports/SWEETVIZ_REPORT.html)
+[💾 Relatório - Faça o download](https://github.com/Mathsnts18/renovacao_seguros/blob/main/notebooks/SWEETVIZ_REPORT.html)
 
 Foram feitas análises completas das variáveis disponibilizadas, avaliando seus por menores e realizando o tratamento se necessário.
 
