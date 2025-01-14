@@ -2,7 +2,7 @@
 
 ## 📌 Visão Geral
 
-Este projeto visa analisar os dados da empresa de seguros **SeguraAí** a fim de análisar os fatores que estão associados a não renovação dos seguros de veiculos e indicar ações que a empresa pode fazer para diminuir esse problema.
+Este projeto teve como objetivo analisar os dados da empresa de seguros **SeguraAí** a fim de identificar os fatores associados à não renovação dos seguros de veículos e indicar ações que poderiam ter sido implementadas para mitigar esse problema.
 
 ## 💼 Entendimento do Negócio
 
@@ -29,84 +29,84 @@ Quando ocorre um evento coberto pela apólice, os segurados apresentam uma **rec
 
 [💾 Relatório - Faça o download](https://github.com/Mathsnts18/renovacao_seguros/blob/main/notebooks/SWEETVIZ_REPORT.html)
 
-Foram feitas análises completas das variáveis disponibilizadas, avaliando seus por menores e realizando o tratamento se necessário.
+Foram realizadas análises completas das variáveis disponibilizadas, avaliando seus pormenores e aplicando tratamentos necessários.
 
-Para automação do projeto, foi utilizado a biblioteca [sweetviz](https://pypi.org/project/sweetviz/#description) para a criação do relatório onde pudemos observar que:
+Para automação do projeto, foi utilizado a biblioteca [sweetviz](https://pypi.org/project/sweetviz/#description) para a criação do relatório. A análise revelou:
 
 **Flag_Renovou**
 
-- Variável target
-- Desbalanceada: 0 aparece em 87%
+- Variável target.
+- Desbalanceada: 0 aparece em 87%.
 
 **Idade**
 
-- 50% dos clientes tem idade entre 35 a 49 anos
+- 50% dos clientes tinham idade entre 35 e 49 anos.
 
 **Perfil_Risco**
 
-- Aparentemente os clientes tendem a renovar quando o seu perfil de risco diminui (`down`)
+- Clientes renovavam mais frequentemente quando seu perfil de risco diminuía (`down`).
 
 **Diferenca_Perfil**
 
-- A maioria dos clientes adquirem o seguro sendo eles mesmos ou os parceiros como motorista
-- Clientes mais novos tendem a renovar
+- A maioria dos clientes adquiria o seguro para si ou para seus parceiros como motoristas.
+- Clientes mais jovens tinham maior probabilidade de renovar.
 
 **Genero**
 
-- 64% de nossa base é composta por homens
+- 64% da base era composta por homens.
 
 **Profissao**
 
-- 41% são médicos.
+- 41% eram médicos.
 
 **Tempo_Apolice**
 
-- 50% da nossa base possui até um ano de apolice
-- A tendencia é a não renovação com o passar do tempo
+- 50% da base possuía até um ano de apólice.
+- A tendência era a não renovação com o passar do tempo.
 
 **Uso_Veiculo**
 
-- A grande maioria, 85%, tem o véiculo para uso pessoal
-- Veiculos que são usados apenas para uso comercial tem um chance maior de renovação, porém há poucas amostras nessa categoria
+- A grande maioria, 85%, utilizava o veículo para uso pessoal.
+- Veículos utilizados apenas para fins comerciais tinham maior chance de renovação, embora houvesse poucas amostras nessa categoria.
 
 **Qte_Apolices**
 
-- Quase 80% da nossa base possui no máximo uma apólice
+- Quase 80% da base possuía, no máximo, uma apólice.
 
 **Premio_Final**
 
-- A mediana do valor a ser pago pelo cliente é de $312
-- 75% dos clientes pagam até $448
+- A mediana do valor pago pelos clientes era de $312.
+- 75% dos clientes pagavam até $448.
 
 **Premio_Qte_Parc**
 
-- 51% dos clientes preferem pagar em apenas uma parcela
+- 51% dos clientes preferiam pagar em apenas uma parcela.
 
 **Premio_Pago_Ult**
 
-- A mediana do valor pago pelo cliente no ultimo ano é de $311
-- 75% dos clientes pagaram até $450
-- Os valores se apresentam praticamente identicos ao do ano atual
+- A mediana do valor pago no último ano era de $311.
+- 75% dos clientes haviam pago até $450.
+- Os valores eram praticamente idênticos aos do ano atual.
 
 **Premio_Mercado**
 
-- A mediana do valor aproximado do mercado é de $317
-- 75% do mercado oferece até $434
-- Nossos valores estão condizentes com o mercado atual
+- A mediana do valor aproximado do mercado era de $317.
+- 75% do mercado oferecia valores até $434.
+- Os valores praticados estavam condizentes com o mercado.
 
 **Premio_Orig**
 
-- A mediana do valor estipulado pela área de pricing é $301
-- 75% estipula até $424
-- Temos um valor menor se comparado ao valor do premio pago pelo cliente
+- A mediana do valor estipulado pela área de pricing era de $301.
+- 75% estipulavam valores até $424.
+- Os valores eram menores em comparação ao prêmio pago pelos clientes.
 
 **Veic_Idade**
 
-- 50% dos veiculos da nossa base possuem de 11 a 16 anos
+- 50% dos veículos tinham entre 11 e 16 anos.
 
 **Veic_Idade_Compra**
 
-- 50% dos veiculos da nossa base foram adquiridos entre 4 a 11 anos
+- 50% dos veículos haviam sido adquiridos entre com 4 e 11 anos de fabricação.
 
 ### ℹ️ Information Value
 ![alt text](.img/image-1.png)
@@ -123,55 +123,53 @@ Em nosso dataset não obtivemos nenhuma variável com o IV acima de 0,07, que no
 | 0,3 a 0,5  | Forte                                   |
 | > 0,5      | Comportamento suspeito |
 
-| Variavel	| IV |
-| --- | --- |
-Perfil_Risco | 0.07
-Tempo_Apolice|0.06
-Idade|0.04
-Veic_Regiao|0.03
-Uso_Veiculo|0.03
-
-Para obter uma análise mais robusta, utilizarei de técnicas de testes de hipótese para verificar se essas proporções são realmente diferentes entre si
+| Variavel   | IV   |
+| ---------- | ---- |
+Perfil_Risco | 0.07 |
+Tempo_Apolice| 0.06 |
+Idade        | 0.04 |
+Veic_Regiao  | 0.03 |
+Uso_Veiculo  | 0.03 |
 
 ### 🤔 Testes de hipótese
 
+Para análises mais robustas, foram aplicadas técnicas de testes de hipótese para verificar se as proporções diferiam significativamente entre os grupos.
+
 ![alt text](.img/image.png)
 
-Como padrão do teste Z para proporção, temos:
+Utilizando o teste Z para proporção, com um nível de significância (alpha) de 0,05:
 
 $H_0: \text{Proporções iguais}$
 
 $H_a: \text{Proporções diferentes}$
 
-Com o nível de significância (alpha) padrão de 0,05.
-Caso o p-valor seja **menor** que alpha, podemos rejeitar a hipótese nula ($H_0$) e afirmar que temos evidências estatisticamentes significativas para afirmar que as proporções são diferentes entre os grupos.
+Caso o p-valor fosse menor que alpha, a hipótese nula ($H_0$) seria rejeitada, indicando diferenças significativas entre as proporções.
 
-A partir disso obtivemos os seguintes resultados:
+Resultados:
 
 **Perfil_Risco**
 
 ![alt text](.img/image-3.png)
 
-- Os segurados que tiveram seu perfil de risco **diminuído** tem uma probabilidade maior de renovar a apólice.
+- Segurados com perfil de risco diminuído tinham maior probabilidade de renovar a apólice.
 
 **Tempo_Apolice**
 
 ![alt text](.img/image-4.png)
 
-- Os segurados que possui um tempo de apólice **menor** tem uma probabilidade maior de renovar a apólice.
+- Segurados com menos tempo de apólice renovavam mais frequentemente.
 
 **Idade**
 
 ![alt text](.img/image-5.png)
 
-- Os segurados com uma idade **menor do que 38 anos** tem uma probabilidade maior de renovar a apólice.
+- Segurados com menos de 38 anos tinham maior probabilidade de renovar.
 
 **Veic_Regiao**
 
 ![alt text](.img/image-6.png)
 
-- Existem regiões onde é mais provável que o segurado renove a apólice.
-- No estudo análisamos a região 12 em relação a região 2 e verificamos uma alta diferença de proporção.
+- Algumas regiões apresentavam maior probabilidade de renovação, como a região 12 em comparação com a região 2.
 - As taxas de renovação de cada região podem ser visualizadas na tabela de IV de `Veic_Regiao` a partir da coluna `Odds` (valores acima de 1.0 há mais probabilidade de renovação).
 
 **Uso_Veiculo**
@@ -179,7 +177,7 @@ A partir disso obtivemos os seguintes resultados:
 ![alt text](.img/image-7.png)
 
 - Temos poucas amostras para a categoria de uso comercial, logo não podemos ter confiança nessa categoria.
-- Os segurados com o uso do veículo privado tem uma maior chance de renovar a apólice em relação ao uso "desconhecido".
+- Segurados que utilizavam o veículo para fins privados tinham maior probabilidade de renovação em relação à categoria "desconhecido".
 - Devemos entender o que significa o valor "desconhecido" da variável para poder ter afirmações mais contundentes.
 
 ## 🎯 Planos de Ação
@@ -188,30 +186,30 @@ Com as análises realizadas, temos um melhor embasamento para desenvolver estrat
 
  ### Ações baseadas no perfil de risco
 
-- **Comunicação personalizada**: Enviar comunicados destacando as vantagens de renovação para clientes com perfil de risco diminuído.
-- **Incentivos para melhorar o perfil de risco**: Oferecer descontos ou bônus para clientes que adotem medidas de segurança, como instalação de rastreadores ou cursos de direção defensiva.
+- **Comunicação personalizada**: Envio de mensagens destacando vantagens para clientes com perfil de risco diminuído.
+- **Incentivos para melhorar o perfil de risco**: Ofertas de descontos ou bônus para clientes que adotassem medidas de segurança, como instalação de rastreadores.
 
 ### Foco em clientes com pouco tempo de apólice
 
-- **Campanhas de retenção**: Desenvolver ações para engajar clientes com até 1 ano de apólice, como descontos progressivos para renovação.
+- **Campanhas de retenção**: Ações específicas para engajar clientes com até 1 ano de apólice.
 
 ### Segmentação por faixa etária
 
-- **Ofertas direcionadas**: Criar pacotes específicos para clientes abaixo de 38* anos, com serviços ou benefícios que atraiam esse público.
+- **Ofertas direcionadas**: Criação de pacotes para clientes abaixo de 38 anos.
 
 **Idade análisada no projeto*
 
-- **Educação financeira**: Promover conteúdos educativos sobre a importância de seguros para clientes mais jovens
+- **Educação financeira**: Promoção de conteúdos educativos sobre seguros.
 
 ### Atenção às regiões com baixa renovação
 
-- **Estudo detalhado das regiões**: Investigar os motivos que levam à baixa renovação em determinadas regiões.
-- **Parcerias locais**: Estabelecer parcerias com oficinas, concessionárias ou eventos regionais para fortalecer a presença da marca.
+- **Estudo detalhado das regiões**: Análise dos motivos de baixa renovação em regiões específicas.
+- **Parcerias locais**: Estabelecimento de parcerias com empresas regionais.
 
 ## 🏁 Conclusão Final
 
 A análise detalhada dos dados da **SeguraAí** revelou insights valiosos sobre os fatores associados à não renovação das apólices de seguro. A identificação de padrões, como a relação entre tempo de apólice, perfil de risco e idade, destaca oportunidades claras para intervenções estratégicas.
 
-Os próximos passos a serem colocados em prática são o de implementar os planos de ação propostos, com monitoramento contínuo para avaliar cada estratégia e aprimorar os dados, como o "uso desconhecido" e assim refinar as análises.
+Os próximos passos envolveriam a implementação dos planos de ação propostos, com monitoramento contínuo e aprimoramento das análises.
 
-Este projeto demonstra como a análise de dados pode revelar oportunidades valiosas para a melhoria dos processos de negócio e o aumento da fidelização dos clientes!
+Este projeto demonstrou como a análise de dados pode identificar oportunidades para melhoria de processos e aumento da fidelização dos clientes.
