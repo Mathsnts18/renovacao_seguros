@@ -1,5 +1,5 @@
 # Renovação de seguros
-
+![alt text](<.img/Renovação de Seguros - github.jpg>)
 ## 📌 Visão Geral
 
 Este projeto teve como objetivo analisar os dados da empresa de seguros **SeguraAí** a fim de identificar os fatores associados à não renovação dos seguros de veículos e indicar ações que poderiam ter sido implementadas para mitigar esse problema.
