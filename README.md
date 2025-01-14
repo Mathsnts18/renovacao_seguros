@@ -150,23 +150,33 @@ A partir disso obtivemos os seguintes resultados:
 
 **Perfil_Risco**
 
+![alt text](.img/image-3.png)
+
 - Os segurados que tiveram seu perfil de risco **diminuído** tem uma probabilidade maior de renovar a apólice.
 
 **Tempo_Apolice**
+
+![alt text](.img/image-4.png)
 
 - Os segurados que possui um tempo de apólice **menor** tem uma probabilidade maior de renovar a apólice.
 
 **Idade**
 
+![alt text](.img/image-5.png)
+
 - Os segurados com uma idade **menor do que 38 anos** tem uma probabilidade maior de renovar a apólice.
 
 **Veic_Regiao**
+
+![alt text](.img/image-6.png)
 
 - Existem regiões onde é mais provável que o segurado renove a apólice.
 - No estudo análisamos a região 12 em relação a região 2 e verificamos uma alta diferença de proporção.
 - As taxas de renovação de cada região podem ser visualizadas na tabela de IV de `Veic_Regiao` a partir da coluna `Odds` (valores acima de 1.0 há mais probabilidade de renovação).
 
 **Uso_Veiculo**
+
+![alt text](.img/image-7.png)
 
 - Temos poucas amostras para a categoria de uso comercial, logo não podemos ter confiança nessa categoria.
 - Os segurados com o uso do veículo privado tem uma maior chance de renovar a apólice em relação ao uso "desconhecido".
